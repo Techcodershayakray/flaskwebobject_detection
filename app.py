@@ -122,7 +122,7 @@ def upload_file():
     for i in range(len(n)):
        topics.append(n[i])
        topics.append(str1)
-       os.environ['_BARD_API_KEY']="Zgg0wtyIOTSwSXpQ4l1nnXcyCGlZZGY8AnviguSOHbxI74vvkvi0zaIaKOfKoJOVGE7CMA."
+       os.environ['_BARD_API_KEY']="ZwgglKJi3weCmy8ZK1frwxpFoQ7v5KGW3wFiX_oE8kO5vRVYwNdVxdozI4089ssHoskP5g."
        output=[]
        array=[]
     for i in topics:
