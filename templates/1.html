@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded Image</title>
+</head>
+<body>
+    <h1>Uploaded Image</h1>
+    <img src="{{ url_for('static',filename='uploads/' + filename) }}" alt="Uploaded Image">
+    <h2>Object Detection Result</h2>
+    <img src="{{ url_for('static', filename='uploads/result_' + filename) }}" alt="Detection Result">
+    <h2>Detected Objects:</h2>
+    <ul>
+        {% for obj in array %}
+        <li>{{ obj }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for obj in name %}
+        <li>{{ obj }}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>

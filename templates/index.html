@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <style>
+        /* Style for index.html */
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('static/back2.jpg'); /* Change the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.upload-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for uploaded.html */
+.result-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.result-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+</style>
+
+ <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+   <h1> PICTEXT AI :)</h1>
+   <h2>Welcome to our web app here you can upload a image and gathers information of objects in the picture and the real life relationship between them on the go. P.S. ENJOY!</h2>
+    <h1>Upload an Image</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+     <!-- Add a button to test the app again -->
+    <form action="/test_again" method="POST">
+        <a href="{{ url_for('index') }}">Test Again</a>
+    </form>
+</body>
+</html>
