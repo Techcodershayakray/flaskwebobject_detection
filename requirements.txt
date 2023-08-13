@@ -1,4 +1,8 @@
-
+gdown==3.12.2
+numpy==1.19.1
+pandas==1.1.0
+streamlit==0.72.0
+opencv-contrib-python-headless==4.4.0.46
 gunicorn==20.1.0
 pip==23.2.1
 aiohttp==3.8.5
